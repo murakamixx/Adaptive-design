@@ -1,0 +1,14 @@
+div{
+    max-height: 300px;
+    max-width: 200px;
+    min-width: 50px;
+    min-height: 100px;
+    float: inline-start;
+    background: green;
+    margin-right: 10px;
+}
+@media(max-width:800px){
+    div{
+        float: none;
+    }
+}

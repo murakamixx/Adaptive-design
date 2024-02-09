@@ -1,0 +1,36 @@
+div{
+    width: 150px;
+    height: 200px;
+    background: green;
+    float: inline-start;
+    margin-right: 10px;
+    position: relative;
+}
+div p{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin: 0px;
+    color: white;
+}
+@media(max-width:800px){
+div:nth-child(3){
+    clear: both;
+}
+}
+@media(max-width:480px){
+    div{
+        float:none;
+    }
+    }
+@media(orientation:portrait) and (max-width:500px) {
+    h1{
+        display: none;
+    }
+    p{
+        display: none;
+    }
+    div p{
+        display: inline;
+    }
+}

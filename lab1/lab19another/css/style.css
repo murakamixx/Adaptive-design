@@ -1,0 +1,465 @@
+@font-face {
+    font-family: "Rubik Mono One";
+    src: url(../fonts/RubikMonoOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #220142;
+    overflow-x: hidden;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    height: 120px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 390px;
+    padding: 49px 0px;
+    font-size: 3px;
+
+}
+
+nav ul li {
+    color: #FFF;
+    font-family: Rubik Mono One;
+    font-size: 6em;
+    letter-spacing: 1.98px;
+}
+
+nav ul li:nth-child(1) a {
+    color: #F98513;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1.98px;
+}
+
+nav ul li:nth-child(1) a:hover {
+    color: rgb(24, 221, 205);
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1.98px;
+}
+
+
+.rocket {
+    height: 83.33vh;
+    background: #2E0458;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11.48vh;
+}
+
+.space {
+    font-size: 16px;
+    ;
+}
+
+.space p:nth-child(1) {
+    color: #F98513;
+
+    font-family: Rubik Mono One;
+    font-size: 6em;
+    letter-spacing: 10.56px;
+}
+
+.space p:nth-child(2) {
+    color: #FBF4FC;
+    font-family: Rubik Mono One;
+    font-size: 4em;
+    letter-spacing: 7.04px;
+}
+
+.planets {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+}
+
+.mercury {
+    width: 600px;
+    height: 700px;
+    font-size: 5px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #2E0458;
+    box-shadow: 5px 5px 10px 0px #411370;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.mercury p {
+    color: #FFF;
+    font-family: Rubik Mono One;
+    font-size: 3.6em;
+    text-align: left;
+    letter-spacing: 1.98px;
+}
+
+.mercury p:nth-child(2) {
+    color: #D282EE;
+    text-align: center;
+    text-shadow: 2px 2px 10px #A896D3;
+    font-family: Rubik Mono One;
+    font-size: 8em;
+    letter-spacing: 16px;
+}
+
+.venus {
+    width: 600px;
+    font-size: 5px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #2E0458;
+    box-shadow: 5px 5px 10px 0px #411370;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.venus p {
+    color: #FFF;
+    font-family: Rubik Mono One;
+    font-size: 3.6em;
+    font-style: normal;
+    text-align: left;
+    letter-spacing: 1.98px;
+}
+
+.venus p:nth-child(2) {
+    color: #F98513;
+    text-align: center;
+    text-shadow: 2px 2px 10px #F48213;
+    font-family: Rubik Mono One;
+    font-size: 8em;
+    letter-spacing: 16px;
+}
+
+.earth {
+    height: 900px;
+    background: #2E0458;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earthText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.earthcontainer {
+    width: 600px;
+    height: 76px;
+    flex-shrink: 0;
+    font-size: 5px;
+}
+
+.earthcontainer p {
+    color: #00D5F5;
+    text-align: center;
+    text-shadow: 2px 2px 10px #55E9FF;
+    font-family: Rubik Mono One;
+    font-size: 8em;
+    letter-spacing: 16px;
+}
+
+.earthTextcontainer {
+    width: 600px;
+    height: 374px;
+    flex-shrink: 0;
+    font-size: 5px;
+}
+
+.earthTextcontainer p {
+    color: #FFF;
+    font-family: Rubik Mono One;
+    text-align: left;
+    font-size: 3.6em;
+    letter-spacing: 1.98px;
+}
+
+.earthTextcontainer p span {
+    color: #A896D3;
+    font-family: Rubik Mono One;
+    font-size: 1em;
+    letter-spacing: 1.98px;
+    text-decoration-line: underline;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 7px;
+}
+
+footer p a {
+    color: #705EA9;
+    font-family: Rubik Mono One;
+    font-size: 2em;
+    letter-spacing: 1.54px;
+}
+
+img[alt="rocket"]:hover {
+    transition: 1.5s;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 40px #F98513);
+}
+
+img[alt="rocket"] {
+    max-height: 65.9vh;
+    transition: 1.5s;
+}
+
+img[alt="mercury"]:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+img[alt="mercury"] {
+    transition: 1s;
+}
+
+img[alt="venus"]:hover {
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+img[alt="venus"] {
+    transition: 1s;
+}
+
+@media(max-width:1600px) {
+    .mercury p {
+        font-size: 2.8em;
+    }
+
+    .venus p {
+        font-size: 2.8em;
+    }
+}
+
+@media(max-width:1400px) {
+    nav ul {
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .rocket {
+        height: 117vh;
+        flex-direction: column-reverse;
+    }
+
+    .mercury p:nth-child(2) {
+        font-size: 7em;
+    }
+
+    .venus p:nth-child(2) {
+        font-size: 7em;
+    }
+}
+
+@media(max-width:1260px) {
+    .venus {
+        width: 550px;
+    }
+
+    .mercury {
+        width: 550px;
+    }
+
+    .earth {
+        height: 120vh;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1200px) {
+    .planets {
+        height: 160.4vh;
+        flex-direction: column;
+    }
+
+    .venus {
+        width: 80.5vw;
+        height: 64.81vh;
+    }
+
+    .mercury {
+        width: 80.5vw;
+        height: 64.81vh;
+    }
+}
+
+@media(max-width:660px) {
+    img[alt="rocket"] {
+        max-width: 66.54vw;
+    }
+
+    img[alt="earth"] {
+        max-width: 80vw;
+
+    }
+
+    nav ul li {
+        font-size: 4em;
+    }
+
+    .earthText {
+        max-width: 96.3vw;
+    }
+
+    .earthcontainer {
+        max-width: 96.3vw;
+    }
+
+    .earthTextcontainer {
+        max-width: 83.9vw;
+    }
+
+    .earthTextcontainer p {
+        font-size: 3em;
+    }
+
+    .space p:nth-child(2) {
+        font-size: 9.9vw;
+    }
+
+    .space p:nth-child(1) {
+        font-size: 14.83vw;
+    }
+    footer p{
+        max-width: 36.7vw;
+    }
+    footer p:nth-child(2){
+        max-width: 81vw;
+    }
+}
+
+@media(max-width:512px) {
+    .mercury p {
+        max-width: 73vw;
+
+    }
+
+    .mercury p:nth-child(2) {
+        font-size: 20px;
+        letter-spacing: 8px;
+    }
+    .venus p{
+        max-width: 73vw;
+    }
+    .venus p:nth-child(2){
+        font-size: 20px;
+        letter-spacing: 8px;
+    }
+    img[alt="mercury"]{
+        max-width: 60vw;
+    }
+    img[alt="venus"]{
+        max-width: 60vw;
+    }
+}
+
+@media(max-height:900px) {
+    img[alt="earth"]{
+        max-height: 74vh
+    }
+    img[alt="mercury"]{
+        max-height: 29.3vh;
+    }
+    img[alt="venus"]{
+        max-height:  29.3vh; ;
+    }
+    .space p:nth-child(2) {
+        font-size: 6.33vh;
+    }
+
+    .space p:nth-child(1) {
+        font-size: 9.037vh;
+    }
+    .mercury{
+        max-height:64.75vh ;
+    }
+    .venus{
+        max-height: 64.75vh;
+
+    }
+    .earthTextcontainer p{
+        font-size: 1.77vh; 
+    }
+    .earthcontainer p{
+        font-size: 4.44vh;
+    }
+    .mercury p:nth-child(3){
+        font-size: 1.55vh;
+    }
+    .venus p:nth-child(3){
+        font-size: 1.55vh;
+    }
+    .rocket{
+        max-height:117vh ;
+    }
+}
+@media(max-height:580px){
+    .earth{
+        height: 171vh;
+    }
+    img[alt="earth"]{
+        max-height:68vh ;
+    }
+    .venus p:nth-child(2){
+        font-size: 4.05vh;
+    }
+    .mercury p:nth-child(2){
+        font-size: 4.05vh;
+    }
+}
+@media (max-width:415px) and (min-height:740px){
+    .space p:nth-child(2){
+        font-size: 46px;
+    }
+    .space p:nth-child(1){
+        font-size: 60px;
+    }
+    .space {
+        width: 350px;
+    }
+}
